@@ -1,0 +1,68 @@
+/* ================================================= */
+/* NAVBAR - GRADIENT + ANIMATION THEME               */
+/* ================================================= */
+
+@keyframes slideDown {
+  from { transform: translateY(-30px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  padding: 12px 25px;
+  color: #fff;
+  box-shadow: 0 4px 15px rgba(0, 123, 255, 0.4);
+  animation: slideDown 0.8s ease-out;
+}
+
+/* Logo text with moving gradient */
+.navbar .logo {
+  font-size: 1.6rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ff6a00, #ee0979, #007bff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientShift 5s linear infinite;
+  cursor: pointer;
+}
+
+.navbar .nav-links {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.navbar .nav-links a {
+  color: white;
+  text-decoration: none;
+  padding: 6px 12px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}
+
+.navbar .nav-links a:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px);
+}
+
+/* Logout Button */
+.logout-btn {
+  background: linear-gradient(90deg, #e74c3c, #ff7675);
+  border: none;
+  padding: 8px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.logout-btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 20px rgba(231, 76, 60, 0.6);
+}

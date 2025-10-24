@@ -1,0 +1,74 @@
+/* ================================================= */
+/* LEAVE REQUEST TABLE - ANIMATED STYLE              */
+/* ================================================= */
+
+@keyframes fadeInTable {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.leave-request-table {
+  width: 90%;
+  margin: 40px auto;
+  padding: 25px;
+  background: linear-gradient(145deg, #ffffff, #f6f8ff);
+  border-radius: 20px;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+  animation: fadeInTable 0.8s ease-out;
+}
+
+.leave-request-table table {
+  width: 100%;
+  border-collapse: collapse;
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.leave-request-table th {
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  color: #fff;
+  padding: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.leave-request-table td {
+  padding: 12px 15px;
+  text-align: center;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+
+.leave-request-table tr:hover {
+  background-color: rgba(0, 123, 255, 0.05);
+}
+
+/* Buttons with animated gradient glow */
+.leave-request-table button {
+  margin: 0 5px;
+  padding: 8px 14px;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.leave-request-table button:first-child {
+  background: linear-gradient(90deg, #27ae60, #2ecc71);
+}
+
+.leave-request-table button:first-child:hover {
+  box-shadow: 0 0 20px rgba(39, 174, 96, 0.6);
+  transform: translateY(-3px);
+}
+
+.leave-request-table button:last-child {
+  background: linear-gradient(90deg, #e74c3c, #ff6b6b);
+}
+
+.leave-request-table button:last-child:hover {
+  box-shadow: 0 0 20px rgba(231, 76, 60, 0.6);
+  transform: translateY(-3px);
+}

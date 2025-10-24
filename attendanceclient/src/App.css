@@ -1,0 +1,45 @@
+/* 🌈 Global Background & Fonts */
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(135deg, #74ebd5, #acb6e5);
+  background-size: 400% 400%;
+  animation: gradientShift 8s ease infinite;
+  min-height: 100vh;
+  color: #003d33;
+  overflow-x: hidden;
+}
+
+/* Fade-in for Page Transitions */
+.page {
+  animation: fadeSlideIn 0.8s ease forwards;
+}
+
+@keyframes fadeSlideIn {
+  from { opacity: 0; transform: translateY(15px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* 🌟 Global Button Style */
+button {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  box-shadow: 0 0 15px rgba(0, 114, 255, 0.6);
+  transform: scale(1.05);
+}

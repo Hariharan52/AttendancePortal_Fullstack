@@ -1,0 +1,43 @@
+/* ================================================= */
+/* ATTENDANCE TABLE - ANIMATED STYLE                 */
+/* ================================================= */
+
+@keyframes fadeInTable {
+  from { opacity: 0; transform: scale(0.95); }
+  to { opacity: 1; transform: scale(1); }
+}
+
+.attendance-table-container {
+  width: 90%;
+  margin: 40px auto;
+  overflow-x: auto;
+  animation: fadeInTable 0.8s ease-out;
+}
+
+.attendance-table-container table {
+  width: 100%;
+  border-collapse: collapse;
+  background: linear-gradient(145deg, #ffffff, #f2f4ff);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 6px 25px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+
+.attendance-table-container th {
+  background: linear-gradient(90deg, #007bff, #00c6ff);
+  color: #fff;
+  padding: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.attendance-table-container td {
+  padding: 12px;
+  text-align: center;
+  transition: background 0.3s ease;
+}
+
+.attendance-table-container tr:hover {
+  background-color: rgba(0, 123, 255, 0.05);
+}

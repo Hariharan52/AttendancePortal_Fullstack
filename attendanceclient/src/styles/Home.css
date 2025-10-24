@@ -1,0 +1,119 @@
+/* ================================================= */
+/* 1. BACKGROUND + GENERAL STYLES                    */
+/* ================================================= */
+
+
+/* Animate background gradient smoothly */
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Container styling */
+.home-container {
+  text-align: center;
+  padding: 80px 20px;
+}
+
+/* Animated gradient text for title */
+.home-title {
+  font-size: 3rem;
+  font-weight: 700;
+  background: linear-gradient(90deg, #ff6a00, #ee0979, #007bff);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: gradientMove 6s linear infinite;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+/* Description paragraph */
+.home-description {
+  max-width: 700px;
+  font-size: 1.2rem;
+  margin: 20px auto 50px auto;
+  color: #333;
+  line-height: 1.8;
+  font-weight: 300;
+  animation: fadeIn 1s ease-out forwards;
+}
+
+/* Fade-in entry animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ================================================= */
+/* 2. FEATURE CARDS                                 */
+/* ================================================= */
+.home-features {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 50px;
+}
+
+.feature-card {
+  background: linear-gradient(145deg, #ffffff, #f0f0f0);
+  color: #333;
+  padding: 25px;
+  border-radius: 15px;
+  width: 280px;
+  text-align: left;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.15);
+  transition:
+    transform 0.5s cubic-bezier(0.19, 1, 0.22, 1),
+    box-shadow 0.4s ease,
+    background 0.6s ease;
+}
+
+/* 3D hover and gradient shine */
+.feature-card:hover {
+  transform: translateY(-10px) scale(1.03) rotateX(5deg);
+  box-shadow: 0 12px 35px rgba(0, 123, 255, 0.4);
+  background: linear-gradient(145deg, #e0f7ff, #f5e8ff);
+}
+
+/* Card Heading Accent */
+.feature-card h3 {
+  color: #007bff;
+  margin-bottom: 10px;
+  font-size: 1.3rem;
+  font-weight: 600;
+}
+
+/* Card text */
+.feature-card p {
+  color: #555;
+  font-size: 1rem;
+}
+
+/* ================================================= */
+/* 3. GET STARTED BUTTON                            */
+/* ================================================= */
+.get-started-btn {
+  background: linear-gradient(90deg, #00c6ff, #0072ff);
+  border: none;
+  padding: 14px 36px;
+  font-size: 1.1rem;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(0, 114, 255, 0.3);
+  transition: all 0.4s ease;
+}
+
+/* Button hover glow */
+.get-started-btn:hover {
+  background: linear-gradient(90deg, #0072ff, #00c6ff);
+  box-shadow: 0 0 25px rgba(0, 114, 255, 0.6);
+  transform: translateY(-3px);
+}
